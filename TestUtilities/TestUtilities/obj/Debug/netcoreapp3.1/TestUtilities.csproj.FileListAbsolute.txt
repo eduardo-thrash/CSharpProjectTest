@@ -1,0 +1,8 @@
+D:\AutomationEdThrash\CSharpProjectTest\TestUtilities\TestUtilities\bin\Debug\netcoreapp3.1\TestUtilities.deps.json
+D:\AutomationEdThrash\CSharpProjectTest\TestUtilities\TestUtilities\bin\Debug\netcoreapp3.1\TestUtilities.dll
+D:\AutomationEdThrash\CSharpProjectTest\TestUtilities\TestUtilities\bin\Debug\netcoreapp3.1\TestUtilities.pdb
+D:\AutomationEdThrash\CSharpProjectTest\TestUtilities\TestUtilities\obj\Debug\netcoreapp3.1\TestUtilities.csprojAssemblyReference.cache
+D:\AutomationEdThrash\CSharpProjectTest\TestUtilities\TestUtilities\obj\Debug\netcoreapp3.1\TestUtilities.AssemblyInfoInputs.cache
+D:\AutomationEdThrash\CSharpProjectTest\TestUtilities\TestUtilities\obj\Debug\netcoreapp3.1\TestUtilities.AssemblyInfo.cs
+D:\AutomationEdThrash\CSharpProjectTest\TestUtilities\TestUtilities\obj\Debug\netcoreapp3.1\TestUtilities.dll
+D:\AutomationEdThrash\CSharpProjectTest\TestUtilities\TestUtilities\obj\Debug\netcoreapp3.1\TestUtilities.pdb
