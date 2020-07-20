@@ -7,5 +7,5 @@
 @Santo Tomas
 Scenario: User Accesses to Santo Tomas University web page
 	Given User has "Santo Tomas University" name
-	When User accesses to "Santo Tomas University" web page
-	Then User get "Santo Tomas University" current web page URL
+	When User accesses to "Santo Tomas University" web page "https://www.usta.edu.co/"
+	Then User get "Santo Tomas University" current web page URL "https://www.usta.edu.co/"

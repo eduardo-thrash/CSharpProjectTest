@@ -11,3 +11,4 @@
 *.testlog
 *.manifest
 /.vs/ProjectSettings.json
+*.dtbcache

@@ -1,27 +1,38 @@
-﻿using System;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
+using System;
 using TechTalk.SpecFlow;
+using UITestProject.Steps.UtilSteps;
 
 namespace UITestProject.Steps.UniversitiesSteps
 {
     [Binding]
-    public class SantoTomasUniversitySteps
+    public class UniversityUtilSteps : HooksUITest
     {
+        private readonly IWebDriver currentDriver;
+
+        public UniversityUtilSteps()
+        {
+            currentDriver = driverController;
+        }
+
         [Given(@"User has ""(.*)"" name")]
         public void GivenUserHasName(string universityName)
         {
-            Console.WriteLine($"Step description with {universityName} test.");
+            // Method intentionally left empty.
         }
 
-        [When(@"User accesses to ""(.*)"" web page")]
-        public void WhenUserAccessesToWebPage(string universityName)
+        [When(@"User accesses to ""(.*)"" web page ""(.*)""")]
+        public void WhenUserAccessesToWebPage(string universityName, string universityUrl)
         {
-            Console.WriteLine($"Step description with {universityName} test.");
+            currentDriver.Navigate().GoToUrl(universityUrl);
         }
 
-        [Then(@"User get ""(.*)"" current web page URL")]
-        public void ThenUserGetCurrentWebPageURL(string universityName)
+        [Then(@"User get ""(.*)"" current web page URL ""(.*)""")]
+        public void ThenUserGetCurrentWebPageURL(string p0, string universityUrl)
         {
-            Console.WriteLine($"Step description with {universityName} test.");
+            Assert.AreEqual(currentDriver.Url, universityUrl);
+            currentDriver.Dispose();
         }
     }
 }

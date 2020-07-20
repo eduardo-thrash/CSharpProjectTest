@@ -111,10 +111,11 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("User has \"Santo Tomas University\" name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
- testRunner.When("User accesses to \"Santo Tomas University\" web page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("User accesses to \"Santo Tomas University\" web page \"https://www.usta.edu.co/\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
- testRunner.Then("User get \"Santo Tomas University\" current web page URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("User get \"Santo Tomas University\" current web page URL \"https://www.usta.edu.co/\"" +
+                        "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -7,5 +7,5 @@
 @Libertadores
 Scenario: User Accesses to Libertadores University web page
 	Given User has "Libertadores University" name
-	When User accesses to "Libertadores University" web page
-	Then User get "Libertadores University" current web page URL
+	When User accesses to "Libertadores University" web page "https://www.ulibertadores.edu.co/"
+	Then User get "Libertadores University" current web page URL "https://www.ulibertadores.edu.co/"

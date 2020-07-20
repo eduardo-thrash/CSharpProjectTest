@@ -1,23 +1,31 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
 using TechTalk.SpecFlow;
 
 namespace UITestProject.Steps.UtilSteps
 {
     [Binding]
-    public sealed class HooksUITest
+    public class HooksUITest
     {
-        // For additional details on SpecFlow hooks see http://go.specflow.org/doc-hooks
+        public static IWebDriver driverController;
+
+        protected HooksUITest()
+        {
+        }
 
         [BeforeScenario]
         public static void BeforeScenario()
         {
             Console.WriteLine("//TODO: implement logic that has to run before executing each scenario \n");
+            driverController = new ChromeDriver();
         }
 
         [AfterScenario]
         public static void AfterScenario()
         {
             Console.WriteLine("\n //TODO: implement logic that has to run after executing each scenario");
+            driverController.Dispose();
         }
 
         [AfterTestRun]
@@ -30,6 +38,18 @@ namespace UITestProject.Steps.UtilSteps
         public static void BeforeTestRun()
         {
             Console.WriteLine("Start Test run \n");
+        }
+
+        [AfterStep]
+        public static void AfterStep()
+        {
+            Console.WriteLine("");
+        }
+
+        [BeforeStep]
+        public static void BeforeStep()
+        {
+            Console.WriteLine("");
         }
     }
 }

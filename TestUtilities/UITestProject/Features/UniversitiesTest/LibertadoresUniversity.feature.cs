@@ -109,10 +109,12 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("User has \"Libertadores University\" name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
- testRunner.When("User accesses to \"Libertadores University\" web page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("User accesses to \"Libertadores University\" web page \"https://www.ulibertadores.ed" +
+                        "u.co/\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
- testRunner.Then("User get \"Libertadores University\" current web page URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("User get \"Libertadores University\" current web page URL \"https://www.ulibertadore" +
+                        "s.edu.co/\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

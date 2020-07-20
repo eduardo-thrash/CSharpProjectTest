@@ -109,10 +109,61 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("User has \"Javeriana University\" name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
- testRunner.When("User accesses to \"Javeriana University\" web page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("User accesses to \"Javeriana University\" web page \"https://www.javeriana.edu.co/ho" +
+                        "me\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
- testRunner.Then("User get \"Javeriana University\" current web page URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("User get \"Javeriana University\" current web page URL \"https://www.javeriana.edu.c" +
+                        "o/home\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("User Accesses to Donaciones section in Javeriana University web page")]
+        [NUnit.Framework.CategoryAttribute("UITest")]
+        [NUnit.Framework.CategoryAttribute("Javeriana")]
+        public virtual void UserAccessesToDonacionesSectionInJaverianaUniversityWebPage()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "UITest",
+                    "Javeriana"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User Accesses to Donaciones section in Javeriana University web page", null, tagsOfScenario, argumentsOfScenario);
+#line 15
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 16
+ testRunner.Given("User has \"Javeriana University\" name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 17
+ testRunner.When("User accesses to \"Javeriana University\" web page \"https://www.javeriana.edu.co/ho" +
+                        "me\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 18
+ testRunner.And("User selects to \"Donaciones\" section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 19
+ testRunner.Then("User get \"Javeriana University\" current web page URL \"https://www.javeriana.edu.c" +
+                        "o/donaciones/\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
