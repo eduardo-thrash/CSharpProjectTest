@@ -12,3 +12,7 @@
 *.manifest
 /.vs/ProjectSettings.json
 *.dtbcache
+/bin/Debug/netcoreapp3.1/*
+/Debug/netcoreapp3.1/*
+/obj/*
+/TestUtilities/obj/Debug/netcoreapp3.1/*
